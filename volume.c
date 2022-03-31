@@ -47,8 +47,9 @@ int main(int argc, char *argv[])
     int16_t buffer;
 
     while((buffer = fgetc()) != EOF){
-        // Change volume of the samples
+        // Change volume of the samples multiplying 
         buffer *= factor;
+        
         // Update the file
         fwrite(&buffer, sizeof(int16_t), 1, output);
     }
