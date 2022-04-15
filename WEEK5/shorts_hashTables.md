@@ -67,4 +67,16 @@
 
 ## Resolving collisions: Chaining.
 
-* Linear probing is subject to a problem called **clustering**
+* What if instead of each element of the array holding just one piece of data, it held multiple pieces of data?
+
+* If each element of the array is a pointer to the head of a linked list, then multiple pieces of data can yield the same hash code and we´ll be able to store it all!, by doing it, we´ve **eliminated clustering**.
+
+* From experience with linked lists that insertion (and creation, if necessary) into a linked list in an **O(1)** operation
+
+* For lookup, we only need to search through what is hopefully a small list, since we,re distributing what would otherwise be one huge list across *n* lists
+
+![image12](chians.png)
+
+*image12* look how Phoebe is added by making her point to Joey and then sixth to Phoebe.
+
+
